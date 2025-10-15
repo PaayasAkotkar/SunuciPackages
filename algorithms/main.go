@@ -4,6 +4,10 @@ import (
 	"math/big"
 )
 
+// IsPalindrome returns true if plaindrome
+// note: this is just created for simple checking
+// this is not implmented for the sentenecs
+// as you can see the trim methods are not applied and regex too
 func IsPalindrome(str string) bool {
 	r := []rune(str)
 	for i, j := 0, len(r)-1; i < len(r)/2; i, j = i+1, j-1 {
@@ -29,7 +33,7 @@ func EdeanGCD(a, b int) int {
 	return EdeanGCD(b, a%b)
 }
 
-// euclid's algortihm but not o(n)
+// EuGCD  algortihm but not o(n)
 // wikipida section: Euclid's algorithm
 // The method introduced by Euclid for computing greatest common divisors is based on the fact that,
 //
